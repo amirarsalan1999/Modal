@@ -1,8 +1,12 @@
 *{box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
 
 body{
-    background: url(../jpg/2.jpg) 0 0/cover no-repeat fixed border-box;
+    position: relative; /*for model-box*/
+    background: url(../jpg/2.jpg) 0 0/cover no-repeat fixed border-box; 
 }
+
+/* create container => 1 : title    2 : button */
+
 #container{
     width: fit-content;
     margin: 0 auto;
@@ -15,7 +19,7 @@ body{
 }
 #btn{
     width: 30%;
-    height: 5vh;
+    height: 2rem;
     display: block;
     margin: 0 auto;
     margin-top: 2rem;
@@ -29,4 +33,54 @@ body{
 }
 #btn:hover{
     background-color: #fff;
+}
+
+
+/* create modal-box => 1 : close-icon     2 : long-text*/
+#modal{
+    display: none; 
+    width: 700px;
+    height: 250px;
+    background-color: rgb(167, 167, 167);
+    position: absolute;
+    border-radius: 3px;
+    animation: modal-animation 1.5s linear both;
+}
+/* close-icon */
+#modal i{
+    cursor: pointer;
+    position: absolute;
+    left: 681px;
+    top: 1px;
+    color: white;
+}
+#modal i:hover{
+    color: rgb(252, 105, 105);
+}
+/* long text */
+#modal p{
+    text-align: justify;
+    padding: .9rem .5rem .5rem .5rem;
+    line-height: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* click on button */
+@keyframes modal-animation {
+    0%{
+        left: 27%;
+        bottom: 35vh;
+    }100%{
+        left: 27%;
+        bottom: 7vh;
+    }
+}
+/* click on close-icon */
+@keyframes modal-animation-reverse {
+    0%{
+        left: 27%;
+        bottom: 7vh;
+    }100%{
+        left: 27%;
+        bottom: 45vh;
+    }
 }
