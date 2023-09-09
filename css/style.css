@@ -1,0 +1,32 @@
+*{box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
+
+body{
+    background: url(../jpg/2.jpg) 0 0/cover no-repeat fixed border-box;
+}
+#container{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 12rem;
+}
+#title{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+#btn{
+    width: 30%;
+    height: 5vh;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 1.06rem;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none !important; 
+    border: none;
+    background-color: rgba(83, 83, 219, 0.9);
+    border-radius: 4px;
+    transition: all .2s;
+}
+#btn:hover{
+    background-color: #fff;
+}
