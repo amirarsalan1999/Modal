@@ -40,7 +40,7 @@ body{
 #modal{
     display: none; 
     width: 700px;
-    height: 250px;
+    height: fit-content;
     background-color: rgb(167, 167, 167);
     position: absolute;
     border-radius: 3px;
@@ -51,7 +51,7 @@ body{
     cursor: pointer;
     position: absolute;
     left: 681px;
-    top: 1px;
+    top: 2px;
     color: white;
 }
 #modal i:hover{
@@ -60,11 +60,12 @@ body{
 /* long text */
 #modal p{
     text-align: justify;
-    padding: .9rem .5rem .5rem .5rem;
+    padding: 1.1rem .5rem .5rem .5rem;
     line-height: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* click on button */
+
+/* show modal-box*/
 @keyframes modal-animation {
     0%{
         left: 27%;
@@ -74,7 +75,7 @@ body{
         bottom: 7vh;
     }
 }
-/* click on close-icon */
+/*close modal-box*/
 @keyframes modal-animation-reverse {
     0%{
         left: 27%;
