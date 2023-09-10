@@ -1,0 +1,67 @@
+/* responsive title and modal-box */
+@media (max-width : 768px) {
+    #title{
+        text-align: center;
+        margin: 1rem;
+    }
+    #modal{
+        width: 400px;
+        height: fit-content;
+    }
+    #modal i{
+        left: 382px;
+        top: 2px;
+    }
+    #modal p{
+        text-align: justify;
+    }
+    /* change animation position */
+    @keyframes modal-animation {
+        0%{
+            left: 27%;
+            bottom: 350px;
+        }100%{
+            left: 27%;
+            bottom: -90px;
+        }
+    }
+    @keyframes modal-animation-reverse {
+        0%{
+            left: 27%;
+            bottom: -90px;
+        }100%{
+            left: 27%;
+            bottom: 350px;
+        }
+    }
+}
+
+/* for mobile */
+@media (max-width : 425px) {
+    #modal{
+        width: 300px;
+        height: fit-content;
+    }
+    #modal i{
+        left: 284px;
+        top: 2px;
+    }
+    @keyframes modal-animation {
+        0%{
+            left: 60px;
+            bottom: 430px;
+        }100%{
+            left: 60px;
+            bottom: -230px;
+        }
+    }
+    @keyframes modal-animation-reverse {
+        0%{
+            left: 60px;
+            bottom: -230px;
+        }100%{
+            left: 60px;
+            bottom: 430px;
+        }
+    }
+}
